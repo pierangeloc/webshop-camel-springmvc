@@ -1,0 +1,45 @@
+{
+  "EU": {
+    "distributionCenter": "EU",
+    "availability": [
+      {
+        "sku": 123456789,
+        "items": 100
+      },
+      {
+        "sku": 234567890,
+        "items": 100
+      },
+      {
+        "sku": 3456789012,
+        "items": 100
+      },
+      {
+        "sku": 4567890123,
+        "items": 100
+      }
+    ]
+  },
+
+  "US": {
+    "distributionCenter": "US",
+    "availability": [
+      {
+        "sku": 123456789,
+        "items": 100
+      },
+      {
+        "sku": 234567890,
+        "items": 100
+      },
+      {
+        "sku": 3456789012,
+        "items": 100
+      },
+      {
+        "sku": 4567890123,
+        "items": 100
+      }
+    ]
+  }
+}

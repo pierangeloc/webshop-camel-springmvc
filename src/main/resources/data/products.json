@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "sku": 123456789,
+      "name": "Super trendy Jeans",
+      "description": "The Jeans of cool people"
+    },
+    {
+      "sku": 234567890,
+      "name": "Super trendy T-Shirt",
+      "description": "The T-Shirt of cool people"
+
+    },
+    {
+      "sku": 3456789012,
+      "name": "Super trendy Jacket",
+      "description": "The Jacket of cool people"
+
+    },
+    {
+      "sku": 4567890123,
+      "name": "Super trendy Shoes",
+      "description": "The Shoes of cool people"
+    }
+  ]
+}

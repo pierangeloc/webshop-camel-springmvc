@@ -1,15 +1,26 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:camel="http://camel.apache.org/schema/spring"
-       xsi:schemaLocation="
-       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:cxf="http://camel.apache.org/schema/cxf"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:camel="http://camel.apache.org/schema/spring"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://camel.apache.org/schema/cxf
+        	http://camel.apache.org/schema/cxf/camel-cxf.xsd
+            http://camel.apache.org/schema/spring
+       		http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <bean id="httpDestinationRegistry"
+          class="org.apache.cxf.transport.http.DestinationRegistryImpl" />
 
     <camel:camelContext id="webshop-ctx">
-
         <camel:template id="producerTemplate"/>
 
         <camel:routeBuilder ref="distributionCenterRouteBuilder"/>
+        <camel:routeBuilder ref="productsApiRouteBuilder"/>
 
     </camel:camelContext>
+
 </beans>

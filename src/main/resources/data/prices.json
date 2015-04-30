@@ -1,0 +1,24 @@
+{
+  "prices": [
+    {
+      "sku": 123456789,
+      "amount": "150",
+      "currency": "EUR"
+    },
+    {
+      "sku": 234567890,
+      "amount": "50",
+      "currency": "EUR"
+    },
+    {
+      "sku": 3456789012,
+      "amount": "100",
+      "currency": "EUR"
+    },
+    {
+      "sku": 4567890123,
+      "amount": "250",
+      "currency": "EUR"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @ImportResource("classpath:/spring/camel-beans.xml")
-@ComponentScan(basePackages = {"com.pierangeloc.shop", "org.apache.camel"})
+@ComponentScan(basePackages = {"com.pierangeloc.shop"})
 @EnableWebMvc
 @PropertySource("classpath:/shop.properties")
 public class WebshopConfiguration extends WebMvcConfigurerAdapter {
